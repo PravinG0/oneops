@@ -934,3 +934,102 @@
   }
 })();
 
+
+/* =========================================================================
+   MODULE 4: INTERACTIVE FAQ ACCORDION
+   ========================================================================= */
+(() => {
+  'use strict';
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach((item) => {
+    const questionBtn = item.querySelector('.faq-question');
+    if (!questionBtn) return;
+    questionBtn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+      // Close other items
+      faqItems.forEach((el) => el.classList.remove('is-open'));
+      if (!isOpen) {
+        item.classList.add('is-open');
+      }
+    });
+  });
+})();
+
+/* =========================================================================
+   MODULE 5: INTERACTIVE ROI SAVINGS CALCULATOR
+   ========================================================================= */
+(() => {
+  'use strict';
+  const sliderEmployees = document.getElementById('calc-employees');
+  const sliderSpend = document.getElementById('calc-spend');
+  const valEmployees = document.getElementById('val-employees');
+  const valSpend = document.getElementById('val-spend');
+  const savingsDisplay = document.getElementById('roi-savings-val');
+
+  if (!sliderEmployees || !sliderSpend || !savingsDisplay) return;
+
+  function updateSavings() {
+    const count = parseInt(sliderEmployees.value, 10) || 50;
+    const spend = parseInt(sliderSpend.value, 10) || 120;
+    
+    if (valEmployees) valEmployees.textContent = count + ' members';
+    if (valSpend) valSpend.textContent = '$' + spend + ' / person';
+
+    // Enterprise savings: 28% through prompt caching, KB injection & overage prevention
+    const totalSpend = count * spend;
+    const monthlySavings = Math.round(totalSpend * 0.28);
+    savingsDisplay.textContent = '$' + monthlySavings.toLocaleString('en-US') + ' / mo';
+  }
+
+  sliderEmployees.addEventListener('input', updateSavings);
+  sliderSpend.addEventListener('input', updateSavings);
+  updateSavings();
+})();
+
+/* =========================================================================
+   MODULE 6: EARLY ACCESS & DEMO REQUEST MODAL
+   ========================================================================= */
+(() => {
+  'use strict';
+  const modal = document.getElementById('demo-modal');
+  const modalBackdrop = document.getElementById('modal-backdrop');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const triggerBtns = document.querySelectorAll('.trigger-demo-modal, a[href="#demo"], a[href="#contact"]');
+  const demoForm = document.getElementById('early-access-form');
+  const formSuccessState = document.getElementById('form-success-state');
+
+  function openModal(e) {
+    if (e) e.preventDefault();
+    if (modal) {
+      modal.classList.add('is-visible');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if (modal) {
+      modal.classList.remove('is-visible');
+      document.body.style.overflow = '';
+    }
+  }
+
+  triggerBtns.forEach((btn) => btn.addEventListener('click', openModal));
+  if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('is-visible')) {
+      closeModal();
+    }
+  });
+
+  if (demoForm) {
+    demoForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      demoForm.style.display = 'none';
+      if (formSuccessState) {
+        formSuccessState.style.display = 'block';
+      }
+    });
+  }
+})();

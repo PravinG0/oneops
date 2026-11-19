@@ -20,7 +20,6 @@
        SECTION 3: TWO-STEP NOTCH NAVIGATION (FIXED OVERLAY)
        ========================================================================= -->
   <nav class="twostep-nav" id="twostep-nav" data-nav-status="closed" data-nav-scrolled="false" aria-label="Main Navigation">
-    <!-- Backdrop Blur Overlay -->
     <div class="twostep-bg" id="nav-backdrop" aria-hidden="true"></div>
 
     <div class="twostep-wrap">
@@ -32,7 +31,6 @@
 
           <!-- Top Row: Logo | BOOK A DEMO | Hamburger -->
           <div class="twostep-top">
-            <!-- Brand Logo (3D Perspective Flip between Word & Mark on scroll) -->
             <a href="#top" class="twostep-logo" aria-label="OneOps Home">
               <span class="twostep-logoWord">
                 <img src="assets/hero/oneops-logo.png" alt="OneOps" class="twostep-logoSvg" style="height: 34px; width: auto; object-fit: contain;">
@@ -44,7 +42,7 @@
 
             <!-- Right Controls -->
             <div class="twostep-actions">
-              <a href="#cta-section" class="twostep-barCta" data-text="BOOK A DEMO">
+              <a href="#demo" class="twostep-barCta trigger-demo-modal" data-text="BOOK A DEMO">
                 <span class="twostep-barCtaInner">
                   <span class="twostep-barCtaBg" style="background: #C23B2E;"></span>
                   <span class="twostep-barCtaDefault">
@@ -55,13 +53,12 @@
                 </span>
               </a>
 
-              <!-- Hamburger / Close Toggle Button -->
               <button class="twostep-toggle" id="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="twostep-toggleBar"></span>
                 <span class="twostep-toggleBar"></span>
               </button>
             </div>
-          </div><!-- /twostep-top -->
+          </div>
 
           <div class="twostep-topLine" aria-hidden="true"></div>
 
@@ -95,8 +92,23 @@
                           </a>
                         </li>
                         <li class="twostep-li">
-                          <a href="#cta-section" class="twostep-link">
-                            <span class="twostep-linkSpan">EARLY ACCESS & DEMO</span>
+                          <a href="#how-it-works" class="twostep-link">
+                            <span class="twostep-linkSpan">HOW IT WORKS</span>
+                          </a>
+                        </li>
+                        <li class="twostep-li">
+                          <a href="#comparison" class="twostep-link">
+                            <span class="twostep-linkSpan">COMPARISON</span>
+                          </a>
+                        </li>
+                        <li class="twostep-li">
+                          <a href="#pricing" class="twostep-link">
+                            <span class="twostep-linkSpan">PRICING & ROI</span>
+                          </a>
+                        </li>
+                        <li class="twostep-li">
+                          <a href="#faq" class="twostep-link">
+                            <span class="twostep-linkSpan">ENTERPRISE FAQ</span>
                           </a>
                         </li>
                       </ul>
@@ -104,7 +116,7 @@
                       <div class="twostep-small">
                         <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
                         <a href="https://x.com" target="_blank" rel="noopener" class="social-link">X / Twitter</a>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                        <a href="https://github.com/PravinG0/oneops" target="_blank" rel="noopener" class="social-link">GitHub</a>
                       </div>
                     </div>
                   </div>
@@ -145,14 +157,14 @@
                     </aside>
                   </div>
 
-                </div><!-- /twostep-bottomRow -->
+                </div>
               </div>
             </div>
-          </div><!-- /twostep-bottom -->
-        </div><!-- /twostep-bar -->
+          </div>
+        </div>
       </div>
     </div>
-  </nav><!-- /twostep-nav -->
+  </nav>
 
 
   <!-- =========================================================================
@@ -161,24 +173,18 @@
   <section class="hero-hero" id="hero-track">
     <div class="hero-stage" id="hero-stage">
 
-      <!-- Viewport Card (95% width, max 1900px, 35px border radius) -->
       <div class="hero-card" id="top">
-
-        <!-- Background Video & Canvas -->
         <video id="hero-bg-video" class="hero-bg-video" src="assets/hero-video.mp4" autoplay loop muted playsinline preload="auto"></video>
         <canvas id="hero-canvas" class="hero-canvas" aria-label="3D Scrollytelling Sequence"></canvas>
         <div class="hero-vignette" aria-hidden="true"></div>
 
-        <!-- Exact SVG Notch Cutout -->
         <img src="assets/hero/union.svg" alt="" class="hero-notch" aria-hidden="true">
 
-        <!-- CONTENT OVERLAYS (Phase 1 Hero & Phase 2 Impact) -->
         <div class="hero-content">
-
           <!-- PHASE 1: INITIAL HERO STATE -->
           <div class="overlay-phase phase-hero" id="phase-hero">
 
-            <!-- 3 Laurel Badges (Top-Left) -->
+            <!-- 3 Laurel Badges -->
             <div class="hero-badges" aria-label="Governance Standards">
               <div class="hero-badge">
                 <img src="assets/hero/laurel-l1.svg" class="hero-laurel" alt="" aria-hidden="true">
@@ -234,7 +240,7 @@
               </span>
             </h1>
 
-            <!-- Floating Feature Card (Bottom-Right) -->
+            <!-- Floating Feature Card -->
             <aside class="hero-videoWrap" aria-label="What's New in OneOps">
               <div class="hero-videoHead">
                 <span class="hero-dot" aria-hidden="true" style="background: #C23B2E;"></span>
@@ -253,10 +259,10 @@
               </div>
             </aside>
 
-          </div><!-- /phase-hero -->
+          </div>
 
 
-          <!-- PHASE 2: SCROLL-REVEALED IMPACT STATEMENT (Locked in Center) -->
+          <!-- PHASE 2: SCROLL-REVEALED IMPACT STATEMENT -->
           <div class="hero-centerText" id="phase-impact">
             <h2 class="hero-centerHeadline">
               YOUR TEAMS ARE USING 12+ AI TOOLS.<br>
@@ -268,20 +274,19 @@
             </p>
           </div>
 
-        </div><!-- /hero-content -->
+        </div>
 
-        <!-- Bottom Linear Progress Bar -->
         <div class="stage-progress-bar" aria-hidden="true">
           <div class="stage-progress-fill" id="progress-indicator" style="background: #C23B2E;"></div>
         </div>
 
-      </div><!-- /hero-card -->
-    </div><!-- /hero-stage -->
-  </section><!-- /hero-hero -->
+      </div>
+    </div>
+  </section>
 
 
   <!-- =========================================================================
-       SECTION 2: PINNED HORIZONTAL SCROLL SECTION (5 CORE CAPABILITIES)
+       SECTION 2: PINNED HORIZONTAL SCROLL SECTION (5 CORE PILLARS)
        ========================================================================= -->
   <main>
     <section class="spacer-section spacer-top">
@@ -300,17 +305,14 @@
     <section class="pinned-section-wrapper" id="rules-track">
       <div class="pinned-sticky-container">
         
-        <!-- Repeating Hexagonal / Honeycomb Mesh Background -->
         <div class="hex-grid-bg" aria-hidden="true"></div>
 
-        <!-- Top Right Equalizer / Controls Icon -->
         <div class="equalizer-widget" aria-hidden="true">
           <span class="eq-bar eq-bar-1" style="background: #C23B2E;"></span>
           <span class="eq-bar eq-bar-2" style="background: #E07063;"></span>
           <span class="eq-bar eq-bar-3" style="background: #7A5C6E;"></span>
         </div>
 
-        <!-- Giant Typography Layers ("govern") with Individual Letter Spans -->
         <div class="giant-word-container" aria-hidden="true">
           <div class="giant-word giant-word-base" id="word-base">
             <span class="char-span" style="--char-i: 0;">g</span>
@@ -330,10 +332,9 @@
           </div>
         </div>
 
-        <!-- Horizontal Sliding Track of Staggered Cards -->
+        <!-- Horizontal Sliding Track -->
         <div class="horizontal-track" id="horizontal-track">
           
-          <!-- Card 1 -->
           <article class="rule-card card-pos-1">
             <div class="card-inner">
               <div class="card-badge">
@@ -347,7 +348,6 @@
             </div>
           </article>
 
-          <!-- Card 2 -->
           <article class="rule-card card-pos-2">
             <div class="card-inner">
               <div class="card-badge">
@@ -361,7 +361,6 @@
             </div>
           </article>
 
-          <!-- Card 3 -->
           <article class="rule-card card-pos-3">
             <div class="card-inner">
               <div class="card-badge">
@@ -375,7 +374,6 @@
             </div>
           </article>
 
-          <!-- Card 4 -->
           <article class="rule-card card-pos-4">
             <div class="card-inner">
               <div class="card-badge">
@@ -389,7 +387,6 @@
             </div>
           </article>
 
-          <!-- Card 5 -->
           <article class="rule-card card-pos-5">
             <div class="card-inner">
               <div class="card-badge">
@@ -403,8 +400,8 @@
             </div>
           </article>
 
-        </div><!-- /.horizontal-track -->
-      </div><!-- /.pinned-sticky-container -->
+        </div>
+      </div>
     </section>
 
     <!-- Transition to Rotary Section -->
@@ -427,7 +424,6 @@
        ========================================================================= -->
   <section class="dial-section" id="features" aria-label="Feature Roadmap Dial">
     
-    <!-- Architectural Grid & Floating Isometric Wireframe -->
     <div class="dial-bg-canvas" aria-hidden="true">
       <div class="bg-v-grid"></div>
       
@@ -452,7 +448,6 @@
     <!-- Pinned Sticky Stage -->
     <div class="dial-sticky-stage" id="dial-stage">
       
-      <!-- Upper Stage Header -->
       <div class="dial-stage-header">
         <span class="dial-kicker" style="color: #E07063;">AI Operations Workspace</span>
         <div class="dial-progress-counter" aria-live="polite">
@@ -465,13 +460,11 @@
       <!-- Rotary Dial Viewport -->
       <div class="dial-viewport" id="dial-viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Rotary feature carousel. Use arrow keys, horizontal drag, or scroll to rotate.">
         
-        <!-- Rotating SVG Gauge / Tick Marks Track -->
         <svg class="dial-track-svg" id="dial-track-svg" aria-hidden="true"></svg>
 
-        <!-- Rotating Cards Carrier -->
         <div class="dial-wheel" id="dial-wheel">
 
-          <!-- CARD 01: Crimson Red (LIVE: Sophia AI) -->
+          <!-- CARD 01: Crimson Red (Sophia AI) -->
           <article class="dial-card-node" data-index="0" data-theme="cyan" id="card-node-0">
             <div class="card-ticket card-cyan" style="background: linear-gradient(135deg, #C23B2E 0%, #8E2319 100%);">
               <div class="ticket-artwork" aria-hidden="true">
@@ -514,7 +507,7 @@
             </div>
           </article>
 
-          <!-- CARD 02: Warm Plum/Mauve (LIVE: Prompt Library) -->
+          <!-- CARD 02: Warm Plum (Prompt Library) -->
           <article class="dial-card-node" data-index="1" data-theme="gold" id="card-node-1">
             <div class="card-ticket card-gold" style="background: linear-gradient(135deg, #7A5C6E 0%, #4D3545 100%);">
               <div class="ticket-artwork" aria-hidden="true">
@@ -553,7 +546,7 @@
             </div>
           </article>
 
-          <!-- CARD 03: Coral Salmon (NEW: Motion Studio) -->
+          <!-- CARD 03: Coral (Motion Studio) -->
           <article class="dial-card-node" data-index="2" data-theme="sage" id="card-node-2">
             <div class="card-ticket card-sage" style="background: linear-gradient(135deg, #D4857A 0%, #A35449 100%);">
               <div class="ticket-artwork" aria-hidden="true">
@@ -592,7 +585,7 @@
             </div>
           </article>
 
-          <!-- CARD 04: Dark Charcoal & Crimson (UP NEXT: Compliance Feedback) -->
+          <!-- CARD 04: Dark Charcoal (Feedback) -->
           <article class="dial-card-node" data-index="3" data-theme="coral" id="card-node-3">
             <div class="card-ticket card-coral" style="background: linear-gradient(135deg, #3A2E35 0%, #20171D 100%); border: 1px solid rgba(194, 59, 46, 0.4);">
               <div class="ticket-artwork" aria-hidden="true">
@@ -631,8 +624,8 @@
             </div>
           </article>
 
-        </div><!-- /.dial-wheel -->
-      </div><!-- /.dial-viewport -->
+        </div>
+      </div>
 
       <!-- Controls Deck -->
       <div class="dial-controls-deck">
@@ -673,37 +666,580 @@
         <span>Drag horizontally or scroll page to turn the wheel</span>
       </div>
 
-    </div><!-- /.dial-sticky-stage -->
+    </div>
   </section>
 
 
   <!-- =========================================================================
-       LEAD-OUT & OUTRO CTA SECTION
+       SECTION 4: HOW IT WORKS (3-STEP TIMELINE)
        ========================================================================= -->
-  <section class="outro-section" id="cta-section" style="padding: 120px 24px; text-align: center; background: #161014;">
-    <div class="outro-content" style="max-width: 820px; margin: 0 auto;">
-      <span class="section-tag" style="color: #E07063; border: 1px solid rgba(194, 59, 46, 0.4); background: rgba(194, 59, 46, 0.12); padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; display: inline-block; margin-bottom: 20px;">Stop Managing AI Access in Slack</span>
-      <h2 class="outro-title" style="font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 20px;">Every AI Key. Every Team. One Control Plane.</h2>
-      <p class="outro-text" style="font-size: 1.15rem; color: #D4857A; line-height: 1.6; margin-bottom: 36px;">OneOps gives your enterprise the visibility, cost control, and AI governance layer that your stack has been missing &mdash; from day one.</p>
-      <div class="outro-actions" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <a href="#top" class="btn btn-outline" style="padding: 14px 28px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); color: #fff; font-weight: 600;">Back to top</a>
-        <a href="mailto:contact@oneops.pro" class="btn btn-primary" style="padding: 14px 32px; border-radius: 999px; background: #C23B2E; color: #fff; font-weight: 700; box-shadow: 0 8px 24px rgba(194, 59, 46, 0.4);">Book a Demo &mdash; Free 14-Day Trial</a>
+  <section class="hiw-section" id="how-it-works">
+    <div class="hiw-container">
+      <div class="section-header-center">
+        <span class="eyebrow-pill">Setup In Minutes</span>
+        <h2 class="section-headline">Connect. Assign. Control.</h2>
+        <p class="section-subheadline">Three intuitive steps to full operational visibility and hard spend limits over every AI tool across your enterprise.</p>
+      </div>
+
+      <div class="hiw-grid">
+        <!-- Step 1 -->
+        <article class="hiw-card">
+          <span class="hiw-step-badge">STEP 01</span>
+          <h3 class="hiw-title">Connect Your AI Providers</h3>
+          <p class="hiw-desc">
+            Paste in your API keys for any provider &mdash; Claude, OpenAI, Gemini, Bedrock, Mistral, Groq, or custom endpoints. OneOps immediately vaults them with zero-knowledge AES-256 encryption.
+          </p>
+          <div class="hiw-snippet">
+            <span>🔐</span>
+            <code>vault.encrypt("sk-ant-...", provider="anthropic")</code>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="hiw-card">
+          <span class="hiw-step-badge">STEP 02</span>
+          <h3 class="hiw-title">Create Teams & Assign Models</h3>
+          <p class="hiw-desc">
+            Organize users into teams and assign specific AI models with point-and-click ease. Define monthly hard budget caps per person or team. Automatically sync roles via Okta or Azure AD SCIM.
+          </p>
+          <div class="hiw-snippet">
+            <span>👥</span>
+            <code>teams.assign(name="Dev", models=["Claude-4", "Bedrock"])</code>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="hiw-card">
+          <span class="hiw-step-badge">STEP 03</span>
+          <h3 class="hiw-title">Track, Alert & Optimize</h3>
+          <p class="hiw-desc">
+            Monitor spend and token burn in real time. Receive proactive alerts before budget thresholds are hit. OneOps blocks prompt PII leakage and generates instant audit chargebacks.
+          </p>
+          <div class="hiw-snippet">
+            <span>⚡</span>
+            <code>alert.threshold(burn="80%", notify=["#finance-slack"])</code>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
+
   <!-- =========================================================================
-       FOOTER
+       SECTION 5: COMPETITIVE COMPARISON MATRIX
        ========================================================================= -->
-  <footer class="site-footer" style="padding: 40px 24px; background: #110C0F; border-top: 1px solid rgba(255,255,255,0.08);">
-    <div class="footer-inner" style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <img src="assets/hero/oneops-logo.png" alt="OneOps" style="height: 30px; width: auto; object-fit: contain;">
-        <span style="color: #7A5C6E; font-size: 0.9rem;">Enterprise AI Governance Platform</span>
+  <section class="comparison-section" id="comparison">
+    <div class="comp-container">
+      <div class="section-header-center">
+        <span class="eyebrow-pill">Built For Operations & Leadership</span>
+        <h2 class="section-headline">Why Enterprises Choose OneOps Over Raw Proxies</h2>
+        <p class="section-subheadline">
+          LiteLLM and Portkey were built as developer routing proxies. OneOps operates above them as the complete Enterprise AI Control Plane &mdash; empowering Finance, IT, and Leadership.
+        </p>
       </div>
-      <p style="color: #8D95B2; font-size: 0.85rem;">&copy; 2026 OneOps Inc. All rights reserved. SOC 2 Type II &bull; HIPAA &bull; GDPR Compliant.</p>
+
+      <div class="comp-table-wrap">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Platform Capability</th>
+              <th>LiteLLM</th>
+              <th>Portkey</th>
+              <th class="col-oneops">OneOps Platform</th>
+              <th>Enterprise Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Primary Target User</strong></td>
+              <td><span class="status-badge-no">Developers only</span></td>
+              <td><span class="status-badge-partial">Developers / Platform Eng</span></td>
+              <td class="col-oneops"><strong>IT &bull; Finance &bull; Security &bull; Leads</strong></td>
+              <td>Built for business decision-makers, not just raw code proxies</td>
+            </tr>
+            <tr>
+              <td><strong>API Gateway & Load Balancing</strong></td>
+              <td><span class="status-badge-yes">&check; Supported</span></td>
+              <td><span class="status-badge-yes">&check; Supported</span></td>
+              <td class="col-oneops"><span class="status-badge-yes">&check; Lightweight Proxy</span></td>
+              <td>High-availability multi-provider fallback & failover</td>
+            </tr>
+            <tr>
+              <td><strong>Zero-Code Model Assignment</strong></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td><span class="status-badge-partial">Partial (JSON configs)</span></td>
+              <td class="col-oneops"><strong>&check; Full UI Support</strong></td>
+              <td>Point-and-click model delegation without engineering tickets</td>
+            </tr>
+            <tr>
+              <td><strong>Individual Spend by Employee</strong></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td class="col-oneops"><strong>&check; 100% Attribution</strong></td>
+              <td>Track exact employee cost & usage rather than general buckets</td>
+            </tr>
+            <tr>
+              <td><strong>Pre-LLM Real-Time PII Guardrails</strong></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td><span class="status-badge-partial">Basic Regex</span></td>
+              <td class="col-oneops"><strong>&check; 20+ PII Types Intercepted</strong></td>
+              <td>Stops SSNs, patient health data & credit cards before external API calls</td>
+            </tr>
+            <tr>
+              <td><strong>Budget Hard Caps Per Person</strong></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td><span class="status-badge-partial">Team-level only</span></td>
+              <td class="col-oneops"><strong>&check; Person + Team Caps</strong></td>
+              <td>Eliminates $14,000 month-end invoice shock with hard caps</td>
+            </tr>
+            <tr>
+              <td><strong>Central Context & Knowledge Base</strong></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td><span class="status-badge-no">&mdash; Not Supported</span></td>
+              <td class="col-oneops"><strong>&check; Auto-Context Injection</strong></td>
+              <td>Cuts token costs and eliminates repetitive prompt context pasting</td>
+            </tr>
+            <tr>
+              <td><strong>Instant Access Revocation</strong></td>
+              <td><span class="status-badge-no">Manual Key Rotation</span></td>
+              <td><span class="status-badge-partial">Key Cycling Required</span></td>
+              <td class="col-oneops"><strong>&check; 30-Second Offboarding</strong></td>
+              <td>Deprovision departing staff without breaking company services</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 6: PRICING MATRIX & INTERACTIVE ROI CALCULATOR
+       ========================================================================= -->
+  <section class="pricing-section" id="pricing">
+    <div class="comp-container">
+      <div class="section-header-center">
+        <span class="eyebrow-pill">Transparent Enterprise Tiers</span>
+        <h2 class="section-headline">Predictable Pricing That Scales With You</h2>
+        <p class="section-subheadline">All plans include a 14-day free trial. Zero credit card required to start.</p>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <article class="price-card">
+          <div class="price-header">
+            <h3 class="price-name">Starter</h3>
+            <p class="price-desc">For small teams establishing initial AI visibility and basic spend oversight.</p>
+          </div>
+          <div class="price-val">$49<span> / month</span></div>
+          <ul class="price-features">
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Up to 3 dedicated teams</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> 10 AI provider API keys</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> 25 team members</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Basic spend attribution & alerts</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Email notification digests</li>
+          </ul>
+          <a href="#demo" class="price-cta-btn trigger-demo-modal">Start Free Trial</a>
+        </article>
+
+        <!-- Growth Plan (Popular) -->
+        <article class="price-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="price-header">
+            <h3 class="price-name">Growth</h3>
+            <p class="price-desc">For fast-growing companies managing multiple AI tools across departments.</p>
+          </div>
+          <div class="price-val">$199<span> / month</span></div>
+          <ul class="price-features">
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Up to 10 dedicated teams</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> <strong>Unlimited API keys</strong></li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> 100 team members</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Real-time budget hard caps & Slack alerts</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Pre-LLM PII & DLP guardrails</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Centralized Knowledge Base & context injection</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Google & Microsoft SSO</li>
+          </ul>
+          <a href="#demo" class="price-cta-btn trigger-demo-modal">Start Free Trial</a>
+        </article>
+
+        <!-- Enterprise Plan -->
+        <article class="price-card">
+          <div class="price-header">
+            <h3 class="price-name">Enterprise</h3>
+            <p class="price-desc">For organizations with strict compliance, audit logging, and private security needs.</p>
+          </div>
+          <div class="price-val">Custom<span> / tailored</span></div>
+          <ul class="price-features">
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Unlimited teams & unlimited users</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> SAML / SCIM SSO (Okta, Azure AD)</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> SOC 2 Type II, HIPAA, and GDPR controls</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Private Cloud / VPC deployment options</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> Workday & BambooHR automated sync</li>
+            <li class="price-feature-item"><span class="price-feature-check">&check;</span> 24/7 Dedicated Solutions Engineer SLA</li>
+          </ul>
+          <a href="#demo" class="price-cta-btn trigger-demo-modal">Schedule Enterprise Demo</a>
+        </article>
+      </div>
+
+      <!-- Interactive ROI & Spend Savings Calculator -->
+      <div class="roi-calculator-box">
+        <div>
+          <span class="eyebrow-pill" style="margin-bottom: 12px;">Interactive ROI Calculator</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 12px;">Calculate Your Estimated AI Cost Reductions</h3>
+          <p style="font-size: 0.95rem; color: #C0C8DA; margin-bottom: 24px; line-height: 1.5;">See how much OneOps saves your enterprise monthly through prompt caching, eliminating redundant seats, and stopping model overages.</p>
+          
+          <div class="slider-group">
+            <div class="slider-header">
+              <span>Employees Using AI Tools:</span>
+              <span class="val" id="val-employees">50 members</span>
+            </div>
+            <input type="range" min="10" max="1000" step="10" value="50" class="calc-range" id="calc-employees">
+          </div>
+
+          <div class="slider-group" style="margin-bottom: 0;">
+            <div class="slider-header">
+              <span>Average Monthly AI Spend Per Employee:</span>
+              <span class="val" id="val-spend">$120 / person</span>
+            </div>
+            <input type="range" min="20" max="500" step="10" value="120" class="calc-range" id="calc-spend">
+          </div>
+        </div>
+
+        <div class="roi-result-card">
+          <div class="roi-label">Estimated Monthly Savings</div>
+          <div class="roi-savings" id="roi-savings-val">$1,680 / mo</div>
+          <p class="roi-sub">Based on average 28% efficiency gains from context caching, hard budget caps, and seat rationalization.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 7: CUSTOMER TESTIMONIALS (BENTO GRID)
+       ========================================================================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="comp-container">
+      <div class="section-header-center">
+        <span class="eyebrow-pill">What Leaders Say</span>
+        <h2 class="section-headline">Trusted by AI Teams at Fast-Moving Companies</h2>
+        <p class="section-subheadline">Hear how engineering, security, and finance executives govern their multi-provider stacks with OneOps.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <article class="test-card">
+          <div>
+            <div class="test-stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <blockquote class="test-quote">
+              &ldquo;Finally one place to see that Marketing is burning through Gemini credits and Dev has 3 expired Bedrock keys. We caught a $4,000 overage before it happened.&rdquo;
+            </blockquote>
+          </div>
+          <div class="test-author-row">
+            <div class="test-avatar">MK</div>
+            <div>
+              <div class="test-name">Morgan K.</div>
+              <div class="test-role">CTO, Series B SaaS Company</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="test-card">
+          <div>
+            <div class="test-stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <blockquote class="test-quote">
+              &ldquo;When an engineer left, we revoked their AI access in 30 seconds from a single screen. Before OneOps that would have been a 2-hour audit across five different provider dashboards.&rdquo;
+            </blockquote>
+          </div>
+          <div class="test-author-row">
+            <div class="test-avatar">SR</div>
+            <div>
+              <div class="test-name">Sarah R.</div>
+              <div class="test-role">Head of IT Security, 300-Person Fintech</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="test-card">
+          <div>
+            <div class="test-stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <blockquote class="test-quote">
+              &ldquo;Finance asked me which departments were driving our generative AI bills. I pulled a full breakdown by team, model, and person in 2 minutes. That used to be a week-long spreadsheet exercise.&rdquo;
+            </blockquote>
+          </div>
+          <div class="test-author-row">
+            <div class="test-avatar">TL</div>
+            <div>
+              <div class="test-name">Tom L.</div>
+              <div class="test-role">VP Operations, 500-Person Enterprise</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 8: ENTERPRISE FAQ ACCORDION
+       ========================================================================= -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <div class="section-header-center">
+        <span class="eyebrow-pill">Got Questions?</span>
+        <h2 class="section-headline">Frequently Asked Questions</h2>
+        <p class="section-subheadline">Everything you need to know about OneOps security, LLM observability, deployment, and onboarding.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- Q1 -->
+        <div class="faq-item is-open">
+          <button class="faq-question">
+            <span>What is OneOps?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            OneOps is an enterprise AI governance platform that helps organizations discover, govern, optimize, and securely manage their entire AI ecosystem (including OpenAI, Claude, Amazon Bedrock, Google Gemini, and 40+ providers) from a single control plane. It provides full visibility into model usage, API keys, user permissions, department spend, and compliance.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Why does my organization need an LLM observability tool like OneOps?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            As AI adoption expands, employees frequently adopt tools without central authorization, creating shadow AI, data exposure, and invoice shock. OneOps gives IT and security leaders centralized key management, strict budget hard caps, real-time PII guardrails, and automated SOC 2 audit logs.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does OneOps connect to our existing tools?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            OneOps connects as a lightweight proxy or through direct provider API keys. It integrates with your existing identity providers (Okta, Azure AD) via SAML/SCIM, streams spend reports to your finance tools, and sends Slack/email alerts when usage thresholds are reached.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Which AI models and providers does OneOps support?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            OneOps supports 40+ foundation models and APIs out of the box, including Anthropic Claude (Sonnet 4, Haiku, Opus), OpenAI (GPT-4o, GPT-3.5), Google Gemini (1.5 Pro, Flash), Amazon Bedrock (Titan, Claude), Mistral, Groq, Cohere, Azure OpenAI, and custom fine-tuned endpoints.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can OneOps stop sensitive enterprise data (PII) from leaking to LLMs?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. OneOps includes pre-LLM real-time DLP inspection. Every prompt is evaluated before leaving your private boundary. It intercepts and redacts over 20+ PII categories (SSNs, credit card numbers, confidential health records, source code keys) and records violation logs for GDPR and HIPAA compliance.
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How quickly can we get started?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Setup takes under 5 minutes. You can vault your first key and invite your team immediately. For enterprises requiring VPC peering, SCIM provisioning, or custom contracts, our engineering team provides same-day white-glove onboarding.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 9: FINAL OUTRO CALL TO ACTION
+       ========================================================================= -->
+  <section class="outro-section" id="cta-section" style="padding: 130px 24px; text-align: center; background: #140D12;">
+    <div class="outro-content" style="max-width: 840px; margin: 0 auto;">
+      <span class="eyebrow-pill" style="margin-bottom: 24px;">Stop Managing AI Access In Slack</span>
+      <h2 class="section-headline" style="font-size: clamp(2.4rem, 5vw, 3.8rem); margin-bottom: 24px;">Every AI Key. Every Team. One Control Plane.</h2>
+      <p class="section-subheadline" style="font-size: 1.2rem; margin-bottom: 40px;">
+        OneOps gives your enterprise the visibility, cost control, and AI governance layer that your stack has been missing &mdash; from day one.
+      </p>
+      <div style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;">
+        <a href="#demo" class="price-cta-btn trigger-demo-modal" style="width: auto; padding: 18px 38px; background: #C23B2E; border-color: #C23B2E; font-size: 1.05rem; box-shadow: 0 10px 30px rgba(194, 59, 46, 0.45);">
+          Book an Enterprise Demo &mdash; Free 14-Day Trial
+        </a>
+        <a href="#top" class="price-cta-btn" style="width: auto; padding: 18px 32px; font-size: 1.05rem;">
+          Back to Top &uarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 10: COMPREHENSIVE GLOBAL FOOTER & BADGES
+       ========================================================================= -->
+  <footer class="footer-v2">
+    <div class="footer-v2-container">
+      
+      <!-- Trust & Compliance Badges Bar -->
+      <div class="footer-trust-row">
+        <div class="trust-badge-pill">
+          <span class="dot"></span>
+          <span>SOC 2 Type II Certified</span>
+        </div>
+        <div class="trust-badge-pill">
+          <span class="dot"></span>
+          <span>HIPAA Ready Guardrails</span>
+        </div>
+        <div class="trust-badge-pill">
+          <span class="dot"></span>
+          <span>GDPR Compliant Privacy</span>
+        </div>
+        <div class="trust-badge-pill">
+          <span class="dot"></span>
+          <span>AES-256 Key Vault Encryption</span>
+        </div>
+        <div class="trust-badge-pill">
+          <span class="dot"></span>
+          <span>99.9% Uptime Guarantee</span>
+        </div>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="footer-links-grid">
+        <!-- Brand Description -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+            <img src="assets/hero/oneops-logo.png" alt="OneOps" style="height: 34px; width: auto; object-fit: contain;">
+          </div>
+          <p style="color: #8D95B2; font-size: 0.95rem; line-height: 1.65; max-width: 360px;">
+            The central control plane for enterprise AI. Manage keys, track spend, enforce hard budgets, and govern access across every AI model your company uses.
+          </p>
+        </div>
+
+        <!-- Product Column -->
+        <div>
+          <h4 class="footer-col-title">Product</h4>
+          <ul class="footer-links-ul">
+            <li><a href="#rules-track">API Key Vault</a></li>
+            <li><a href="#rules-track">Spend Attribution</a></li>
+            <li><a href="#rules-track">Model Assignment</a></li>
+            <li><a href="#rules-track">Pre-LLM DLP</a></li>
+            <li><a href="#features">Sophia AI Assistant</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-ul">
+            <li><a href="#top">About OneOps</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#testimonials">Customer Stories</a></li>
+            <li><a href="https://github.com/PravinG0/oneops" target="_blank" rel="noopener">GitHub Repository</a></li>
+            <li><a href="#demo" class="trigger-demo-modal">Contact Sales</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div>
+          <h4 class="footer-col-title">Legal & Security</h4>
+          <ul class="footer-links-ul">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#dpa">Data Processing Addendum</a></li>
+            <li><a href="#security">Security Whitepaper</a></li>
+            <li><a href="#cookies">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 OneOps Technologies Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 24px;">
+          <span>SOC 2 Type II Certified</span>
+          <span>Zero-Knowledge Encryption</span>
+        </div>
+      </div>
+
     </div>
   </footer>
+
+
+  <!-- =========================================================================
+       EARLY ACCESS & DEMO REQUEST MODAL (INTERACTIVE POPUP)
+       ========================================================================= -->
+  <div class="demo-modal-wrap" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="demo-modal-backdrop" id="modal-backdrop"></div>
+
+    <div class="demo-modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="eyebrow-pill" style="margin-bottom: 12px; font-size: 0.75rem;">14-Day Free Access</span>
+        <h3 id="modal-title" style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 8px;">Schedule an Enterprise Demo</h3>
+        <p style="font-size: 0.95rem; color: #D4857A; line-height: 1.5;">See how OneOps eliminates shadow AI, controls model spend, and enforces DLP across your teams.</p>
+      </div>
+
+      <form id="early-access-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="form-name">Full Name *</label>
+            <input type="text" id="form-name" class="form-input" placeholder="Sarah Connor" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-email">Work Email *</label>
+            <input type="email" id="form-email" class="form-input" placeholder="sarah@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="form-company">Company Name *</label>
+            <input type="text" id="form-company" class="form-input" placeholder="Acme Cyber Systems" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-role">Job Title / Role *</label>
+            <input type="text" id="form-role" class="form-input" placeholder="Head of IT / CTO" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="form-models">Primary AI Models Used (Optional)</label>
+          <input type="text" id="form-models" class="form-input" placeholder="Claude 3.5 Sonnet, GPT-4o, Amazon Bedrock">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="form-notes">Specific Governance or Compliance Needs (Optional)</label>
+          <textarea id="form-notes" class="form-textarea" rows="3" placeholder="e.g. SOC2 compliance, team hard budget caps, PII interception..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">Submit Request &mdash; Schedule Demo</button>
+        <p style="font-size: 0.8rem; color: #64748b; text-align: center; margin-top: 12px;">Instant confirmation. No credit card required.</p>
+      </form>
+
+      <div id="form-success-state" style="display: none; text-align: center; padding: 40px 10px;">
+        <div style="font-size: 3rem; margin-bottom: 16px;">🎉</div>
+        <h4 style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 10px;">Demo Request Received!</h4>
+        <p style="color: #C0C8DA; font-size: 1rem; line-height: 1.6; max-width: 420px; margin: 0 auto;">Our enterprise solutions team will contact you within 2 business hours with your personalized sandbox environment.</p>
+      </div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
